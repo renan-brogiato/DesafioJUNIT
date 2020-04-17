@@ -1,4 +1,35 @@
-//Commit 1:
+//Commit 3: 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import org.junit.jupiter.api.Test;
+
+import JulgamentoPrisioneiro.Resposta;
+
+class JulgamentoPrisioneiroTest {
+
+	@Test
+	void testJulgamento() {
+
+		//testes iniciais sobre resposta
+		Resposta respSuspeitoA = Resposta.DELACAO;
+		Resposta respSuspeitoB = Resposta.DELACAO;
+		
+		JulgamentoPrisioneiro jp = new JulgamentoPrisioneiro();
+		assertNotNull(jp);
+		
+		int penaSuspeitoA = jp.calculaPena(respSuspeitoA, respSuspeitoB);
+		int penaSuspeitoB = jp.calculaPena(respSuspeitoB, respSuspeitoA);
+		
+		//resposta esperada
+		assertEquals(5, penaSuspeitoA);
+		assertEquals(5, penaSuspeitoB);
+		
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------
+//Commit 2: sem alteração
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,3 +43,5 @@ class JulgamentoPrisioneiroTest {
 	}
 
 }
+-------------------------------------------------------------------------------------------------
+//Commit 1: Criação do arquivo
