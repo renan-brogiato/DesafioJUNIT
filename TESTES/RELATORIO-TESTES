@@ -5,6 +5,14 @@ Commit 1:
   ClasseTeste: Criação do arquivo ClasseTeste.txt
   
   Resultado: Erro em 'ClasseJulgamento':'Resposta cannot be resolved to a type'
+  Resolução: Crição do metodo 'public enum Reposta'
+  
+Commit 2:
+  ClasseJulgamento: Criação do metodo 'public enum Reposta'
+  ClasseTeste: sem updates
+  
+  Resultado: Erro em 'ClasseJulgamento':'Resposta cannot be resolved to a type'
   Resolução: Crição da classe 'public enum Reposta'
+  
   
   
