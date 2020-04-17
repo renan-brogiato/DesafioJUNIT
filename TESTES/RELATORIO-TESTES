@@ -14,5 +14,7 @@ Commit 2:
   Resultado: Erro em 'ClasseJulgamento':'Resposta cannot be resolved to a type'
   Resolução: Crição da classe 'public enum Reposta'
   
+Commit 3:
+  ClasseTeste: Adicionando testes iniciais sobre resposta esperada
   
   
